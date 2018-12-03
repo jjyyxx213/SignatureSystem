@@ -3,7 +3,7 @@ import os
 class Config:
     SECRET_KEY = (os.getenv('SECRET_KEY') or 'hard to guess string')
     SQLALCHEMY_TRACK_MODIFICATIONS = False
-    POSTS_PER_PAGE = 20
+    POSTS_PER_PAGE = 30
     POSTS_AUTH_PAGE = 150
     UPLOAD_DIR = os.path.join(os.path.abspath(os.path.dirname(__file__)), 'app/static/uploads/')
     USER_UPLOAD_DIR = os.path.join(os.path.abspath(os.path.dirname(__file__)), 'app/static/uploads/users/')
