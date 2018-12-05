@@ -18,7 +18,7 @@ class Config:
 class DevelopmentConfig(Config):
     DEBUG = True
     SQLALCHEMY_DATABASE_URI = 'mysql+pymysql://dev:6Jn,+nHpZnUr[AFX@localhost:3306/db_cs_meeting'
-    REDIS_URL = 'redis://:@*3&!XnP@106.14.124.91:6379/0'
+    REDIS_URL = 'redis://:password@106.14.124.91:6379/0'
 
 class TestingConfig(Config):
     TESTING = True
