@@ -1,2 +1,4 @@
 qrcode==6.0
 pillow==5.3.0
+redis==3.0.1
+flask-redis==0.3.0

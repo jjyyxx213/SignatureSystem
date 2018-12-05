@@ -2,6 +2,7 @@
 from . import home
 from flask import render_template, request, current_app
 from qrcode import QRCode, constants
+from app import redis_store
 
 @home.route('/', methods=['GET'])
 def index():
@@ -10,6 +11,7 @@ def index():
 @home.route('/qrcode/add', methods=['GET'])
 def add_qrcode():
     data = request.args.get('data', 'www.baidu.com?a=1234&b=4567')
+    assert data == ''
     qr = QRCode(
         version=1,
         error_correction=constants.ERROR_CORRECT_L,
